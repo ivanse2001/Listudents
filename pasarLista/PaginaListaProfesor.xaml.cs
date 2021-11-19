@@ -13,8 +13,6 @@ namespace pasarLista
             InitializeComponent();
             a = asignatura;
             
-            //
-
             ListView listView = new ListView
             {
                 RowHeight = 90,
