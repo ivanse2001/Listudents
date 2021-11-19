@@ -18,15 +18,11 @@ namespace pasarLista
             ListView listView = new ListView
             {
                 RowHeight = 90,
-                // Source of data items.
+                
                 ItemsSource = a.misAlumnosEnAsignatura,
                 
-                // Define template for displaying each item.
-                // (Argument of DataTemplate constructor is called for 
-                //      each item; it must return a Cell derivative.)
                 ItemTemplate = new DataTemplate(() =>
                 {
-                    // Create views with bindings for displaying each property.
                     Label nameLabel = new Label();
                     nameLabel.SetBinding(Label.TextProperty, "Nombre");
                     nameLabel.FontSize = 18;
@@ -45,7 +41,6 @@ namespace pasarLista
                     boxView.CornerRadius = 20;
                     boxView.Scale = 0.54;
 
-                    // Return an assembled ViewCell.
                     return new ViewCell
                     {
                         
