@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="pasarLista.FichaAlumno"
+    Title="EXPEDIENTE"
+    BackgroundColor="White">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="20">
+            <Image Source="us2.png" AbsoluteLayout.LayoutBounds="0.1,0.025,0.2,0.2" AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="NOMBRE:" AbsoluteLayout.LayoutBounds="0.65,0.11,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label x:Name="NombreAl" AbsoluteLayout.LayoutBounds="1.2,0.11,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" TextColor="Black"/>
+            <Label Text="APELLIDOS:" AbsoluteLayout.LayoutBounds="0.65,0.21,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label x:Name="ApellidosAl" AbsoluteLayout.LayoutBounds="1.2,0.21,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" TextColor="Black"/>
+            <Label Text="EXPEDIENTE:" AbsoluteLayout.LayoutBounds="0.65,0.31,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+            <Label x:Name="ExpedienteAl" AbsoluteLayout.LayoutBounds="1.2,0.31,0.5,0.5" AbsoluteLayout.LayoutFlags="All" FontSize="15" TextColor="Black"/>
+            <Image x:Name="nfclogo" Source="NFC.jpg" AbsoluteLayout.LayoutBounds="0.3,0.55,1,0.2" AbsoluteLayout.LayoutFlags="All" Scale="1.7"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="pasarLista.PaginaAlumno"
+    Title="HORARIO ALUMNO"
+    BackgroundColor="White"
+    >
+    
+    <ContentPage.Content>
+        <ListView  x:Name="listaAsignaturas" ItemSelected="objetosAsignatura_ItemSelected"  RowHeight="90">
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label Padding="10,20,0,0" FontSize="18" Text="{Binding NombreAsignatura}" TextColor="Black" />
+                            <Label Padding="10,0,0,0" FontSize="16" Text="{Binding Fecha}" TextColor="Gray"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
+
